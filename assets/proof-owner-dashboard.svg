@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+<style>
+.title{font:800 38px Arial, sans-serif;letter-spacing:-1px}
+.sub{font:700 18px Arial, sans-serif}
+.h3{font:800 22px Arial, sans-serif}
+.body{font:500 17px Arial, sans-serif}
+.small{font:600 14px Arial, sans-serif}
+.pill{font:800 13px Arial, sans-serif}
+.num{font:900 42px Arial, sans-serif}
+.table{font:600 15px Arial, sans-serif}
+</style>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff8ea"/><stop offset="1" stop-color="#f4efe6"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111827" flood-opacity="0.15"/></filter>
+</defs>
+<rect width="1440" height="900" fill="url(#bg)"/>
+<rect x="70" y="58" width="1300" height="784" rx="34" fill="#ffffff" filter="url(#shadow)"/>
+<rect x="70" y="58" width="1300" height="76" rx="34" fill="#111827"/>
+<rect x="70" y="105" width="1300" height="29" fill="#111827"/>
+<circle cx="113" cy="96" r="10" fill="#ef4444"/><circle cx="145" cy="96" r="10" fill="#f59e0b"/><circle cx="177" cy="96" r="10" fill="#22c55e"/>
+<text x="220" y="103" class="sub" fill="#e5e7eb">FieldLayer demo install · sample data</text>
+<text x="1040" y="103" class="sub" fill="#93c5fd">Human-reviewed workflows</text>
+<text x="110" y="190" class="title" fill="#10151f">Owner operating dashboard</text>
+<text x="112" y="224" class="sub" fill="#647084">A simple daily command center for what needs attention now.</text>
+<rect x="112" y="250" width="288" height="34" rx="17" fill="#eaf3ee"/><text x="126" y="273" class="pill" fill="#315f4b">Owner Visibility Dashboard</text><rect x="396" y="250" width="258" height="34" rx="17" fill="#eaf3ee"/><text x="410" y="273" class="pill" fill="#315f4b">Today&#x27;s operating queue</text>
+<rect x="120" y="300" width="270" height="135" rx="18" fill="#fffaf1" stroke="#ded2bf"/>
+<text x="142" y="336" class="h3" fill="#10151f">New leads</text>
+<text x="142" y="366" class="body" fill="#647084">3 need reply in under 15 min</text>
+<rect x="420" y="300" width="270" height="135" rx="18" fill="#fffaf1" stroke="#ded2bf"/>
+<text x="442" y="336" class="h3" fill="#10151f">Open estimates</text>
+<text x="442" y="366" class="body" fill="#647084">$4,320 waiting on approval</text>
+<rect x="720" y="300" width="270" height="135" rx="18" fill="#fffaf1" stroke="#ded2bf"/>
+<text x="742" y="336" class="h3" fill="#10151f">Stale deals</text>
+<text x="742" y="366" class="body" fill="#647084">5 follow-ups drafted</text>
+<rect x="1020" y="300" width="270" height="135" rx="18" fill="#fffaf1" stroke="#ded2bf"/>
+<text x="1042" y="336" class="h3" fill="#10151f">Reviews</text>
+<text x="1042" y="366" class="body" fill="#647084">2 jobs ready for request</text>
+<rect x="120" y="475" width="560" height="250" rx="24" fill="#111827"/>
+<text x="155" y="530" class="h3" fill="#fff">Priority queue</text>
+<text x="155" y="575" class="body" fill="#cbd5e1">1. Approve powder room estimate</text>
+<text x="155" y="620" class="body" fill="#cbd5e1">2. Schedule won accent wall job</text>
+<text x="155" y="665" class="body" fill="#cbd5e1">3. Send stale follow-up drafts</text>
+<rect x="730" y="475" width="560" height="250" rx="24" fill="#fffaf1" stroke="#ded2bf"/>
+<text x="765" y="530" class="h3" fill="#10151f">Human controls</text>
+<text x="765" y="575" class="body" fill="#647084">Approve · Edit · Reject · Ask for info</text>
+<text x="765" y="625" class="body" fill="#647084">Nothing customer-facing is sent without review.</text>
+<text x="765" y="675" class="body" fill="#647084">The system watches. The owner decides.</text>
+<text x="110" y="812" class="small" fill="#647084">Illustrative demo based on real workflow patterns. Names, jobs, prices, and dates are sample data.</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+<style>
+.title{font:800 38px Arial, sans-serif;letter-spacing:-1px}
+.sub{font:700 18px Arial, sans-serif}
+.h3{font:800 22px Arial, sans-serif}
+.body{font:500 17px Arial, sans-serif}
+.small{font:600 14px Arial, sans-serif}
+.pill{font:800 13px Arial, sans-serif}
+.num{font:900 42px Arial, sans-serif}
+.table{font:600 15px Arial, sans-serif}
+</style>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff8ea"/><stop offset="1" stop-color="#f4efe6"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111827" flood-opacity="0.15"/></filter>
+</defs>
+<rect width="1440" height="900" fill="url(#bg)"/>
+<rect x="70" y="58" width="1300" height="784" rx="34" fill="#ffffff" filter="url(#shadow)"/>
+<rect x="70" y="58" width="1300" height="76" rx="34" fill="#111827"/>
+<rect x="70" y="105" width="1300" height="29" fill="#111827"/>
+<circle cx="113" cy="96" r="10" fill="#ef4444"/><circle cx="145" cy="96" r="10" fill="#f59e0b"/><circle cx="177" cy="96" r="10" fill="#22c55e"/>
+<text x="220" y="103" class="sub" fill="#e5e7eb">FieldLayer demo install · sample data</text>
+<text x="1040" y="103" class="sub" fill="#93c5fd">Human-reviewed workflows</text>
+<text x="110" y="190" class="title" fill="#10151f">Calculation audit</text>
+<text x="112" y="224" class="sub" fill="#647084">Make price assumptions visible instead of burying them in memory or notes.</text>
+<rect x="112" y="250" width="288" height="34" rx="17" fill="#eaf3ee"/><text x="126" y="273" class="pill" fill="#315f4b">Estimate Calculation Audit</text><rect x="386" y="250" width="138" height="34" rx="17" fill="#eef2f7"/><text x="400" y="273" class="pill" fill="#647084">Sample data</text>
+<rect x="760" y="282" width="520" height="420" rx="26" fill="#111827"/>
+<text x="800" y="342" class="sub" fill="#cbd5e1">Draft total</text><text x="800" y="405" class="num" fill="#ffffff">$640–$725</text>
+<rect x="800" y="455" width="420" height="18" rx="9" fill="#374151"/><rect x="800" y="455" width="318" height="18" rx="9" fill="#d87a32"/>
+<text x="800" y="515" class="h3" fill="#ffffff">Why this matters</text>
+<text x="800" y="555" class="body" fill="#cbd5e1">The owner sees the assumptions, risk notes, and calculation trail before sending an estimate.</text>
+<text x="800" y="622" class="body" fill="#cbd5e1">AI drafts. Humans approve, edit, or reject.</text>
+<rect x="120" y="304" width="560" height="58" rx="14" fill="#fffaf1" stroke="#eadfce"/><text x="145" y="340" class="table" fill="#647084">Room type</text><text x="380" y="340" class="table" fill="#10151f">Powder room wallpaper</text><rect x="120" y="374" width="560" height="58" rx="14" fill="#fffaf1" stroke="#eadfce"/><text x="145" y="410" class="table" fill="#647084">Measured sqft</text><text x="380" y="410" class="table" fill="#10151f">86 sqft</text><rect x="120" y="444" width="560" height="58" rx="14" fill="#fffaf1" stroke="#eadfce"/><text x="145" y="480" class="table" fill="#647084">Material estimate</text><text x="380" y="480" class="table" fill="#10151f">2 rolls + 10% waste</text><rect x="120" y="514" width="560" height="58" rx="14" fill="#fffaf1" stroke="#eadfce"/><text x="145" y="550" class="table" fill="#647084">Labor range</text><text x="380" y="550" class="table" fill="#10151f">4.5–5.5 hours</text><rect x="120" y="584" width="560" height="58" rx="14" fill="#fffaf1" stroke="#eadfce"/><text x="145" y="620" class="table" fill="#647084">Risk note</text><text x="380" y="620" class="table" fill="#10151f">Pattern match may add labor</text><rect x="120" y="654" width="560" height="58" rx="14" fill="#fffaf1" stroke="#eadfce"/><text x="145" y="690" class="table" fill="#647084">Owner decision</text><text x="380" y="690" class="table" fill="#10151f">Approve / edit / request photos</text>
+<text x="110" y="812" class="small" fill="#647084">Illustrative demo based on real workflow patterns. Names, jobs, prices, and dates are sample data.</text>
+</svg>

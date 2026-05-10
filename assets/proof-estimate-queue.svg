@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+<style>
+.title{font:800 38px Arial, sans-serif;letter-spacing:-1px}
+.sub{font:700 18px Arial, sans-serif}
+.h3{font:800 22px Arial, sans-serif}
+.body{font:500 17px Arial, sans-serif}
+.small{font:600 14px Arial, sans-serif}
+.pill{font:800 13px Arial, sans-serif}
+.num{font:900 42px Arial, sans-serif}
+.table{font:600 15px Arial, sans-serif}
+</style>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff8ea"/><stop offset="1" stop-color="#f4efe6"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111827" flood-opacity="0.15"/></filter>
+</defs>
+<rect width="1440" height="900" fill="url(#bg)"/>
+<rect x="70" y="58" width="1300" height="784" rx="34" fill="#ffffff" filter="url(#shadow)"/>
+<rect x="70" y="58" width="1300" height="76" rx="34" fill="#111827"/>
+<rect x="70" y="105" width="1300" height="29" fill="#111827"/>
+<circle cx="113" cy="96" r="10" fill="#ef4444"/><circle cx="145" cy="96" r="10" fill="#f59e0b"/><circle cx="177" cy="96" r="10" fill="#22c55e"/>
+<text x="220" y="103" class="sub" fill="#e5e7eb">FieldLayer demo install · sample data</text>
+<text x="1040" y="103" class="sub" fill="#93c5fd">Human-reviewed workflows</text>
+<text x="110" y="190" class="title" fill="#10151f">Estimate review queue</text>
+<text x="112" y="224" class="sub" fill="#647084">Drafts are structured before a customer ever sees them.</text>
+<rect x="112" y="250" width="228" height="34" rx="17" fill="#eaf3ee"/><text x="126" y="273" class="pill" fill="#315f4b">Estimate Draft Queue</text><rect x="330" y="250" width="258" height="34" rx="17" fill="#fff1d6"/><text x="344" y="273" class="pill" fill="#b45309">Owner approval required</text>
+<rect x="120" y="285" width="300" height="84" rx="18" fill="#fffaf1" stroke="#ded2bf"/>
+<text x="142" y="321" class="h3" fill="#10151f">4 drafts waiting</text>
+<text x="142" y="351" class="body" fill="#647084">Nothing customer-facing sent yet</text>
+<rect x="450" y="285" width="300" height="84" rx="18" fill="#fffaf1" stroke="#ded2bf"/>
+<text x="472" y="321" class="h3" fill="#10151f">2 math checks</text>
+<text x="472" y="351" class="body" fill="#647084">Labor/material assumptions visible</text>
+<rect x="780" y="285" width="300" height="84" rx="18" fill="#fffaf1" stroke="#ded2bf"/>
+<text x="802" y="321" class="h3" fill="#10151f">1 missing detail</text>
+<text x="802" y="351" class="body" fill="#647084">System asks before guessing</text>
+<rect x="120" y="335" width="1200" height="72" rx="16" fill="#fffaf1" stroke="#eadfce"/><text x="145" y="365" class="table" fill="#10151f">Sample Job #1048 · Kitchen wallpaper</text><text x="145" y="390" class="small" fill="#647084">sqft assumption flagged</text><text x="790" y="378" class="h3" fill="#10151f">$1,280</text><rect x="960" y="354" width="208" height="34" rx="17" fill="#fff1d6"/><text x="974" y="377" class="pill" fill="#b45309">Needs owner review</text><rect x="120" y="423" width="1200" height="72" rx="16" fill="#f8efe0" stroke="#eadfce"/><text x="145" y="453" class="table" fill="#10151f">Sample Job #1051 · Powder room</text><text x="145" y="478" class="small" fill="#647084">material count verified</text><text x="790" y="466" class="h3" fill="#10151f">$640</text><rect x="960" y="442" width="158" height="34" rx="17" fill="#eaf3ee"/><text x="974" y="465" class="pill" fill="#315f4b">Ready to send</text><rect x="120" y="511" width="1200" height="72" rx="16" fill="#fffaf1" stroke="#eadfce"/><text x="145" y="541" class="table" fill="#10151f">Sample Job #1054 · Accent wall</text><text x="145" y="566" class="small" fill="#647084">missing wall height</text><text x="790" y="554" class="h3" fill="#10151f">$390</text><rect x="960" y="530" width="198" height="34" rx="17" fill="#fff1d6"/><text x="974" y="553" class="pill" fill="#b45309">Needs measurement</text><rect x="120" y="599" width="1200" height="72" rx="16" fill="#f8efe0" stroke="#eadfce"/><text x="145" y="629" class="table" fill="#10151f">Sample Job #1057 · Nursery mural</text><text x="145" y="654" class="small" fill="#647084">labor range pending</text><text x="790" y="642" class="h3" fill="#10151f">$1,150</text><rect x="960" y="618" width="108" height="34" rx="17" fill="#fff1d6"/><text x="974" y="641" class="pill" fill="#b45309">Drafting</text>
+<text x="110" y="812" class="small" fill="#647084">Illustrative demo based on real workflow patterns. Names, jobs, prices, and dates are sample data.</text>
+</svg>

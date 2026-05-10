@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900">
+<defs>
+<style>
+.title{font:800 38px Arial, sans-serif;letter-spacing:-1px}
+.sub{font:700 18px Arial, sans-serif}
+.h3{font:800 22px Arial, sans-serif}
+.body{font:500 17px Arial, sans-serif}
+.small{font:600 14px Arial, sans-serif}
+.pill{font:800 13px Arial, sans-serif}
+.num{font:900 42px Arial, sans-serif}
+.table{font:600 15px Arial, sans-serif}
+</style>
+<linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#fff8ea"/><stop offset="1" stop-color="#f4efe6"/></linearGradient>
+<filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#111827" flood-opacity="0.15"/></filter>
+</defs>
+<rect width="1440" height="900" fill="url(#bg)"/>
+<rect x="70" y="58" width="1300" height="784" rx="34" fill="#ffffff" filter="url(#shadow)"/>
+<rect x="70" y="58" width="1300" height="76" rx="34" fill="#111827"/>
+<rect x="70" y="105" width="1300" height="29" fill="#111827"/>
+<circle cx="113" cy="96" r="10" fill="#ef4444"/><circle cx="145" cy="96" r="10" fill="#f59e0b"/><circle cx="177" cy="96" r="10" fill="#22c55e"/>
+<text x="220" y="103" class="sub" fill="#e5e7eb">FieldLayer demo install · sample data</text>
+<text x="1040" y="103" class="sub" fill="#93c5fd">Human-reviewed workflows</text>
+<text x="110" y="190" class="title" fill="#10151f">Schedule + capacity view</text>
+<text x="112" y="224" class="sub" fill="#647084">Turn calendars into owner visibility before work gets missed or overbooked.</text>
+<rect x="112" y="250" width="258" height="34" rx="17" fill="#eaf3ee"/><text x="126" y="273" class="pill" fill="#315f4b">14-Day Capacity Monitor</text><rect x="368" y="250" width="158" height="34" rx="17" fill="#eef2f7"/><text x="382" y="273" class="pill" fill="#647084">Demo calendar</text>
+<rect x="120" y="300" width="1180" height="395" rx="24" fill="#fffaf1" stroke="#ded2bf"/>
+<text x="145" y="345" class="h3" fill="#10151f">Mon</text><rect x="145" y="365" width="138" height="260" rx="16" fill="#ffffff" stroke="#eadfce"/><rect x="159" y="390" width="110" height="46" rx="12" fill="#315f4b"/><text x="169" y="418" class="small" fill="#fff">Job booked</text><rect x="159" y="450" width="110" height="46" rx="12" fill="#94a3b8"/><text x="169" y="478" class="small" fill="#fff">Open capacity</text><text x="307" y="345" class="h3" fill="#10151f">Tue</text><rect x="307" y="365" width="138" height="260" rx="16" fill="#ffffff" stroke="#eadfce"/><rect x="321" y="390" width="110" height="46" rx="12" fill="#315f4b"/><text x="331" y="418" class="small" fill="#fff">Install booked</text><rect x="321" y="450" width="110" height="46" rx="12" fill="#d87a32"/><text x="331" y="478" class="small" fill="#fff">Estimate slot</text><rect x="321" y="510" width="110" height="46" rx="12" fill="#ef4444"/><text x="331" y="538" class="small" fill="#fff">Conflict risk</text><text x="469" y="345" class="h3" fill="#10151f">Wed</text><rect x="469" y="365" width="138" height="260" rx="16" fill="#ffffff" stroke="#eadfce"/><rect x="483" y="390" width="110" height="46" rx="12" fill="#315f4b"/><text x="493" y="418" class="small" fill="#fff">Job booked</text><rect x="483" y="450" width="110" height="46" rx="12" fill="#94a3b8"/><text x="493" y="478" class="small" fill="#fff">Open capacity</text><text x="631" y="345" class="h3" fill="#10151f">Thu</text><rect x="631" y="365" width="138" height="260" rx="16" fill="#ffffff" stroke="#eadfce"/><rect x="645" y="390" width="110" height="46" rx="12" fill="#315f4b"/><text x="655" y="418" class="small" fill="#fff">Install booked</text><rect x="645" y="450" width="110" height="46" rx="12" fill="#d87a32"/><text x="655" y="478" class="small" fill="#fff">Estimate slot</text><rect x="645" y="510" width="110" height="46" rx="12" fill="#ef4444"/><text x="655" y="538" class="small" fill="#fff">Conflict risk</text><text x="793" y="345" class="h3" fill="#10151f">Fri</text><rect x="793" y="365" width="138" height="260" rx="16" fill="#ffffff" stroke="#eadfce"/><rect x="807" y="390" width="110" height="46" rx="12" fill="#315f4b"/><text x="817" y="418" class="small" fill="#fff">Job booked</text><rect x="807" y="450" width="110" height="46" rx="12" fill="#94a3b8"/><text x="817" y="478" class="small" fill="#fff">Open capacity</text><text x="955" y="345" class="h3" fill="#10151f">Sat</text><rect x="955" y="365" width="138" height="260" rx="16" fill="#ffffff" stroke="#eadfce"/><rect x="969" y="390" width="110" height="46" rx="12" fill="#315f4b"/><text x="979" y="418" class="small" fill="#fff">Job booked</text><rect x="969" y="450" width="110" height="46" rx="12" fill="#94a3b8"/><text x="979" y="478" class="small" fill="#fff">Open capacity</text><text x="1117" y="345" class="h3" fill="#10151f">Sun</text><rect x="1117" y="365" width="138" height="260" rx="16" fill="#ffffff" stroke="#eadfce"/><rect x="1131" y="390" width="110" height="46" rx="12" fill="#315f4b"/><text x="1141" y="418" class="small" fill="#fff">Job booked</text><rect x="1131" y="450" width="110" height="46" rx="12" fill="#94a3b8"/><text x="1141" y="478" class="small" fill="#fff">Open capacity</text><rect x="120" y="725" width="360" height="62" rx="18" fill="#fff1d6" stroke="#f2c77d"/><text x="145" y="763" class="table" fill="#92400e">2 unscheduled won jobs need dates</text>
+<rect x="510" y="725" width="360" height="62" rx="18" fill="#eaf3ee" stroke="#b7d4c5"/><text x="535" y="763" class="table" fill="#315f4b">3 open estimate windows this week</text>
+<rect x="900" y="725" width="360" height="62" rx="18" fill="#fee2e2" stroke="#fecaca"/><text x="925" y="763" class="table" fill="#991b1b">1 crew conflict before Friday</text>
+<text x="110" y="812" class="small" fill="#647084">Illustrative demo based on real workflow patterns. Names, jobs, prices, and dates are sample data.</text>
+</svg>

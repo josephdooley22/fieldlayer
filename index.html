@@ -53,8 +53,8 @@
     .quote { font-size:clamp(28px,4vw,46px); line-height:1.08; letter-spacing:-.045em; font-weight:900; max-width:980px; }
     .proofgrid { display:grid; grid-template-columns:repeat(2,1fr); gap:18px; margin-top:28px; }
     .shot { position:relative; overflow:hidden; border-radius:22px; border:1px solid #2d3b52; background:#0f172a; min-height:260px; }
-    .shot img { width:100%; height:100%; min-height:260px; object-fit:cover; filter:blur(3px) saturate(.8); transform:scale(1.02); opacity:.65; }
-    .shot:after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(15,23,42,.1),rgba(15,23,42,.82)); }
+    .shot img { width:100%; height:100%; min-height:260px; object-fit:cover; display:block; }
+    .shot:after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,rgba(15,23,42,0),rgba(15,23,42,.72)); pointer-events:none; }
     .caption { position:absolute; left:18px; right:18px; bottom:16px; z-index:2; }
     .caption strong { display:block; font-size:20px; letter-spacing:-.03em; }
     .caption p { margin:5px 0 0; color:#d7deeb; font-size:14px; }
@@ -131,14 +131,14 @@
 
     <section id="proof" class="dark">
       <div class="wrap">
-        <span class="eyebrow">Redacted proof assets</span>
-        <h2>Real workflow shapes, sensitive details removed.</h2>
-        <p class="lead">These screenshots are intentionally obscured. The point is the operating structure: queues, approvals, calculations, schedule views, and system status.</p>
+        <span class="eyebrow">Example install previews</span>
+        <h2>Make the operating layer visible.</h2>
+        <p class="lead">Instead of showing private client data, these clean demo screens show what a FieldLayer-style setup can look like after install: queues, approvals, calculations, schedule risk, and owner visibility.</p>
         <div class="proofgrid">
-          <div class="shot"><img src="assets/proof-03.png" alt="Redacted estimate queue" /><div class="caption"><strong>Estimate review queue</strong><p>Draft estimates wait for owner approval before anything customer-facing is sent.</p></div></div>
-          <div class="shot"><img src="assets/proof-04.png" alt="Redacted estimate calculation" /><div class="caption"><strong>Calculation audit</strong><p>Labor, material, sqft assumptions, and notes are structured for review.</p></div></div>
-          <div class="shot"><img src="assets/proof-06.png" alt="Redacted schedule capacity view" /><div class="caption"><strong>Schedule + capacity</strong><p>Bookings, openings, unscheduled committed work, and conflict risk in one view.</p></div></div>
-          <div class="shot"><img src="assets/proof-08.png" alt="Redacted automation roster" /><div class="caption"><strong>Automation roster</strong><p>Multiple agents/workflows watching operations, not one generic chatbot.</p></div></div>
+          <div class="shot"><img src="assets/proof-estimate-queue.svg" alt="Demo estimate review queue" /><div class="caption"><strong>Estimate review queue</strong><p>Draft estimates wait for owner approval before anything customer-facing is sent.</p></div></div>
+          <div class="shot"><img src="assets/proof-calculation-audit.svg" alt="Demo estimate calculation audit" /><div class="caption"><strong>Calculation audit</strong><p>Labor, material, sqft assumptions, and notes are structured for review.</p></div></div>
+          <div class="shot"><img src="assets/proof-pipeline-followup.svg" alt="Demo stale pipeline follow-up board" /><div class="caption"><strong>Stale pipeline + follow-up</strong><p>Stuck opportunities surface with next-step drafts for human approval.</p></div></div>
+          <div class="shot"><img src="assets/proof-schedule-capacity.svg" alt="Demo schedule capacity monitor" /><div class="caption"><strong>Schedule + capacity</strong><p>Bookings, openings, unscheduled committed work, and conflict risk in one view.</p></div></div>
         </div>
       </div>
     </section>
