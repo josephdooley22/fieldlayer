@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home Service CRM Leak Map — FieldLayer</title>
+  <meta name="description" content="A practical leak map for home service operators choosing what to fix before buying another CRM or automating with AI." />
+  <style>
+    :root { --ink:#10151f; --muted:#647084; --paper:#f4efe6; --card:#fffaf1; --line:#ded2bf; --accent:#315f4b; --dark:#111827; --cream:#fff8ea; }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper);line-height:1.58} a{color:inherit}.wrap{max-width:980px;margin:0 auto;padding:0 22px}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:950;letter-spacing:-.04em;font-size:21px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 16px;border-radius:13px;background:var(--accent);color:#fff;text-decoration:none;font-weight:850;border:1px solid #214433}.btn.secondary{background:transparent;color:var(--ink);border-color:var(--line)}.hero{padding:64px 0 34px}.eyebrow{display:inline-flex;padding:7px 11px;border-radius:999px;background:var(--cream);border:1px solid var(--line);color:var(--muted);font-size:13px;font-weight:850}h1{font-size:clamp(42px,7vw,72px);line-height:.96;letter-spacing:-.07em;margin:18px 0}h2{font-size:clamp(28px,4vw,42px);line-height:1;letter-spacing:-.055em;margin:0 0 12px}h3{margin:0 0 8px;letter-spacing:-.03em}.lead{font-size:20px;color:#354052}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin:26px 0}.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 18px 42px rgba(17,24,39,.06)}.muted{color:var(--muted)}.list{display:grid;gap:10px;margin:14px 0 0;padding:0;list-style:none}.list li{position:relative;padding-left:28px}.list li:before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:950}.dark{background:var(--dark);color:#fff;margin:40px 0;padding:36px 0}.dark .muted{color:#cbd5e1}.steps{counter-reset:s;display:grid;gap:14px;margin:24px 0}.step{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px}.step h3:before{counter-increment:s;content:counter(s) ". ";color:var(--accent)}footer{padding:30px 0;border-top:1px solid var(--line);color:var(--muted)}@media(max-width:760px){.grid{grid-template-columns:1fr}.nav{gap:14px}}
+  </style>
+</head>
+<body>
+  <div class="wrap nav"><a class="brand" href="/">FieldLayer</a><a class="btn secondary" href="/">Back to site</a></div>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">Free operator guide</span>
+        <h1>Before you buy another CRM, map the leak.</h1>
+        <p class="lead">A lot of home-service CRM questions are really workflow questions. The tool matters, but first identify where work stalls: lead intake, estimates, follow-up, scheduling, reviews, or owner visibility.</p>
+        <p class="muted">Use this as a practical first-pass audit before changing software or adding AI automation.</p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>The six front-office leaks</h2>
+      <div class="grid">
+        <div class="card"><h3>Lead intake</h3><p class="muted">Calls, forms, texts, and voice notes arrive messy. The leak: missing job details, slow response, and no clear owner.</p></div>
+        <div class="card"><h3>Estimate drafting</h3><p class="muted">Job notes turn into pricing from memory. The leak: delayed estimates, hidden assumptions, and rework.</p></div>
+        <div class="card"><h3>Follow-up</h3><p class="muted">Warm opportunities sit in a CRM stage. The leak: no trigger, no draft, no human prompt to move the deal forward.</p></div>
+        <div class="card"><h3>Scheduling</h3><p class="muted">Sold work does not cleanly hit the calendar. The leak: idle capacity, conflicts, and unscheduled commitments.</p></div>
+        <div class="card"><h3>Reviews and referrals</h3><p class="muted">Finished jobs disappear after payment. The leak: missed proof, missed referrals, and inconsistent reputation building.</p></div>
+        <div class="card"><h3>Owner visibility</h3><p class="muted">Important exceptions live in the owner’s head. The leak: no daily view of what needs attention now.</p></div>
+      </div>
+    </section>
+
+    <section class="dark">
+      <div class="wrap">
+        <h2>The FieldLayer rule</h2>
+        <p class="lead">Do not automate a vague process. Pick one leak, define the trigger, draft the next move, and keep a human approval step until the workflow is proven.</p>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2>A 20-minute leak map</h2>
+      <div class="steps">
+        <div class="step"><h3>Choose the closest leak to money already in motion</h3><p class="muted">Usually new leads, estimates waiting on review, stale estimates, or sold work not scheduled.</p></div>
+        <div class="step"><h3>Write the trigger</h3><p class="muted">Example: “Estimate sent and no reply after 3 business days” or “New form submission missing room count or photos.”</p></div>
+        <div class="step"><h3>Define the system output</h3><p class="muted">A draft reply, structured estimate assumptions, a stale-deal queue, a schedule-risk note, or a daily owner summary.</p></div>
+        <div class="step"><h3>Name the human decision</h3><p class="muted">Approve, correct, send, schedule, reject, escalate, or wait. If no human decision exists, the workflow is not ready.</p></div>
+        <div class="step"><h3>Run it manually before automating</h3><p class="muted">A spreadsheet, saved prompt, or daily checklist is enough to prove whether the workflow matters.</p></div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="card">
+        <h2>Want the starter templates?</h2>
+        <p class="muted">The FieldLayer AI Front Office Starter Kit includes workflow maps, prompt/script packs, implementation notes, and a 7-day setup checklist for human-reviewed front-office AI.</p>
+        <p><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Get the Starter Kit — $29</a></p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">FieldLayer — practical AI operating systems for home service businesses. No private customer data. Human-reviewed first.</div></footer>
+</body>
+</html>
