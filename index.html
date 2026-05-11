@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FieldLayer — Operating systems for home service businesses</title>
-  <meta name="description" content="FieldLayer builds AI-powered operating systems for home service businesses — starting with estimates, pipeline, scheduling, and owner visibility." />
+  <meta name="description" content="FieldLayer sells a $29 starter kit for installing your first human-reviewed AI front-office workflow: leak map, workflow blueprints, prompts, scripts, and a 7-day implementation path." />
   <meta property="og:title" content="FieldLayer — Operating systems for home service businesses" />
-  <meta property="og:description" content="Not a chatbot. An operating layer watching estimates, pipeline, and schedule — the places home service companies leak money." />
+  <meta property="og:description" content="A practical starter kit for turning home-service leaks — leads, estimates, follow-up, scheduling, reviews — into human-reviewed AI workflows." />
   <style>
     :root { --ink:#10151f; --muted:#647084; --paper:#f4efe6; --card:#fffaf1; --line:#ded2bf; --accent:#315f4b; --accent2:#d87a32; --dark:#111827; --cream:#fff8ea; }
     * { box-sizing:border-box; }
@@ -63,8 +63,16 @@
     .faq summary { cursor:pointer; font-weight:900; letter-spacing:-.025em; }
     .faq p { margin:10px 0 0; color:var(--muted); }
     .mini { font-size:13px; color:var(--muted); margin-top:10px; }
+    .steps { display:grid; gap:14px; margin-top:24px; counter-reset:step; }
+    .step { display:grid; grid-template-columns:52px 1fr; gap:16px; align-items:start; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:18px; }
+    .step:before { counter-increment:step; content:counter(step); width:38px; height:38px; border-radius:12px; display:grid; place-items:center; background:var(--accent); color:white; font-weight:950; }
+    .deliverables { display:grid; grid-template-columns:repeat(2,1fr); gap:16px; margin-top:24px; }
+    .deliverable { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:20px; }
+    .deliverable small { display:block; color:var(--accent2); font-weight:900; text-transform:uppercase; letter-spacing:.06em; margin-bottom:8px; }
+    .outcome { background:#eaf3ee; border:1px solid #b7d4c5; border-radius:20px; padding:20px; margin-top:22px; }
+
     footer { padding:34px 0; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
-    @media (max-width:860px){ .hero-grid,.grid3,.grid2,.proofgrid,.offer { grid-template-columns:1fr; } .navlinks a:not(.btn){ display:none; } .hero{padding-top:50px;} }
+    @media (max-width:860px){ .hero-grid,.grid3,.grid2,.proofgrid,.offer,.deliverables { grid-template-columns:1fr; } .navlinks a:not(.btn){ display:none; } .hero{padding-top:50px;} }
   </style>
 </head>
 <body>
@@ -72,7 +80,7 @@
     <div class="wrap">
       <nav>
         <div class="brand"><div class="mark"></div><span>FieldLayer</span></div>
-        <div class="navlinks"><a href="#proof">Proof</a><a href="#workflows">Workflows</a><a href="home-service-crm-leak-map.html">Leak Map</a><a href="build-log.html">Build Log</a><a href="#offer">Starter Kit</a><a href="#audit">Audit</a><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Get the kit — $29</a></div>
+        <div class="navlinks"><a href="#solution">Solution</a><a href="#inside">What you get</a><a href="#proof">Proof</a><a href="#workflows">Workflows</a><a href="home-service-crm-leak-map.html">Leak Map</a><a href="build-log.html">Build Log</a><a href="#audit">Audit</a><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Get the kit — $29</a></div>
       </nav>
     </div>
   </header>
@@ -81,18 +89,18 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <span class="eyebrow">Built from inside a real home service operation</span>
-          <h1>Operating systems for home service businesses.</h1>
-          <p class="lead">FieldLayer builds practical AI-powered workflows for estimates, pipeline, scheduling, and owner visibility — starting with the places service companies leak money.</p>
+          <span class="eyebrow">$29 starter kit · Built from real home-service workflow patterns</span>
+          <h1>Install your first AI front-office workflow.</h1>
+          <p class="lead">FieldLayer is a practical starter kit for home service owners who want AI helping with leads, estimates, follow-up, scheduling, reviews, and owner visibility — without letting a chatbot run the business.</p>
           <div class="hero-actions">
             <a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Buy the Starter Kit — $29</a>
             <a class="btn secondary" href="https://x.com/rickships">Follow the build</a>
           </div>
-          <p class="proofline">No private customer data. No magic claims. AI drafts, calculates, sweeps, and flags. Humans approve, correct, send, and decide. The roadmap comes from operator conversations, objections, and implementation feedback — not generic AI theory.</p>
+          <p class="proofline">What you buy: a leak map, workflow blueprints, prompt/script packs, implementation notes, demo install examples, and a 7-day path to install one human-reviewed workflow. No private customer data, no magic claims, no generic AI theory.</p>
         </div>
         <div class="panel">
-          <h3>The operating layer</h3>
-          <p class="muted">Not a chatbot answering questions. A system watching the daily work that usually falls between tools.</p>
+          <h3>What FieldLayer helps you build</h3>
+          <p class="muted">A front-office workflow where AI drafts, calculates, sweeps, and flags — while the owner or operator approves the customer-facing move.</p>
           <div class="stack">
             <div>Estimates <span>draft + recalc</span></div>
             <div>Pipeline <span>stale deal sweep</span></div>
@@ -107,6 +115,37 @@
     <section class="dark">
       <div class="wrap">
         <div class="quote">“This isn’t a chatbot answering questions. It’s an operating layer watching estimates, pipeline, and schedule — the three places home service companies usually leak money.”</div>
+      </div>
+    </section>
+
+    <section id="solution">
+      <div class="wrap">
+        <span class="eyebrow">The solution</span>
+        <h2>A starter kit for one real front-office install.</h2>
+        <p class="lead">FieldLayer does not sell “AI education.” The Starter Kit shows you how to take one messy operational leak and turn it into a human-reviewed workflow your business can actually use.</p>
+        <div class="steps">
+          <div class="step"><div><h3>Map the leak</h3><p class="muted">Pick the money leak closest to revenue: missed leads, slow estimates, stale follow-up, unscheduled sold work, reviews, or owner visibility.</p></div></div>
+          <div class="step"><div><h3>Define the workflow</h3><p class="muted">Clarify the trigger, inputs, AI output, approval step, and the bad outcome the workflow prevents.</p></div></div>
+          <div class="step"><div><h3>Install the manual version first</h3><p class="muted">Use the included prompts, scripts, checklist, and examples to run the workflow with human review before automating it.</p></div></div>
+          <div class="step"><div><h3>Use feedback to decide what to automate</h3><p class="muted">Once the workflow is proven, you know what belongs in your CRM, calendar, inbox, GHL, QuickBooks, or automation stack.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="inside">
+      <div class="wrap">
+        <span class="eyebrow">What you actually get</span>
+        <h2>The $29 Starter Kit includes the operating pieces.</h2>
+        <p class="lead">The goal is not to hand you a vague PDF about AI. It is to give you the pieces to choose one front-office leak and install a simple workflow around it.</p>
+        <div class="deliverables">
+          <div class="deliverable"><small>01</small><h3>AI Opportunity Audit</h3><p class="muted">A guided audit for finding where admin work leaks money: leads, estimates, follow-up, scheduling, reviews, and reporting.</p></div>
+          <div class="deliverable"><small>02</small><h3>Workflow Blueprints</h3><p class="muted">Practical maps for lead intake, estimate drafting, stale follow-up, review requests, owner dashboards, and human approval loops.</p></div>
+          <div class="deliverable"><small>03</small><h3>Prompt + Script Packs</h3><p class="muted">Copy-paste starting points for intake summaries, estimate drafts, follow-up messages, review asks, and daily owner updates.</p></div>
+          <div class="deliverable"><small>04</small><h3>Implementation Notes</h3><p class="muted">How to think about fitting the workflow around tools like Go High Level, QuickBooks, calendars, inboxes, spreadsheets, or CRMs.</p></div>
+          <div class="deliverable"><small>05</small><h3>Demo Install Examples</h3><p class="muted">Readable example screens showing what an estimate queue, calculation audit, pipeline sweep, and capacity monitor can look like.</p></div>
+          <div class="deliverable"><small>06</small><h3>7-Day First Install Path</h3><p class="muted">A simple sequence for picking one workflow, running it manually, keeping approval in place, and deciding what to improve next.</p></div>
+        </div>
+        <div class="outcome"><h3>By the end, you should know exactly what your first AI-assisted front-office workflow is, what it watches, what it drafts, who approves it, and what operational leak it is supposed to prevent.</h3></div>
       </div>
     </section>
 
@@ -181,21 +220,21 @@
         <div class="panel">
           <span class="eyebrow">Entry product</span>
           <div class="price">$29</div>
-          <h3>AI Front Office Starter Kit</h3>
-          <p class="muted">The first FieldLayer product: a practical starter kit for installing human-reviewed front-office workflows.</p>
+          <h3>FieldLayer Starter Kit</h3>
+          <p class="muted">A practical kit for installing your first human-reviewed AI front-office workflow in a home service business.</p>
           <a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Buy on Whop</a>
-          <p class="proofline">Delivery is inside Whop. After checkout, buyers get access to the FieldLayer Starter Kit course module.</p>
-          <p class="mini">Best first install: pick one lead source, one follow-up leak, and one human approval point. Build the manual version before automating anything. Improve the workflow only after real operator feedback shows what is missing.</p>
+          <p class="proofline">Delivery is inside Whop. After checkout, buyers get the course module, templates, prompts, scripts, implementation notes, and first-install checklist.</p>
+          <p class="mini">Best first install: pick one lead source, one follow-up leak, and one human approval point. Build the manual version before automating anything. Improve only after real operator feedback shows what is missing.</p>
         </div>
         <div>
           <h2>What you get</h2>
           <ul class="list">
-            <li>AI opportunity audit for home service workflows</li>
-            <li>Front-office blueprint for lead intake, estimates, follow-up, reviews, and owner visibility</li>
-            <li>Prompt and script packs for human-reviewed drafts</li>
-            <li>Go High Level + QuickBooks implementation notes</li>
-            <li>7-day implementation checklist</li>
-            <li>Owner Q&A for explaining the workflow internally</li>
+            <li>Leak map: find where front-office work is costing time or revenue</li>
+            <li>Workflow blueprints: lead intake, estimates, follow-up, scheduling, reviews, owner visibility</li>
+            <li>Prompt/script packs: drafts, missing-info asks, follow-ups, review requests, owner updates</li>
+            <li>Tool-fit notes: how to think about GHL, QuickBooks, calendars, inboxes, spreadsheets, and CRMs</li>
+            <li>Demo install examples: estimate queue, calculation audit, pipeline sweep, capacity monitor</li>
+            <li>7-day implementation checklist: install one workflow manually before automation</li>
           </ul>
         </div>
       </div>
@@ -261,6 +300,6 @@
     </section>
   </main>
 
-  <footer><div class="wrap">FieldLayer — operating systems for home service businesses. Built in public by Rick Ships. Starter product: AI Front Office Starter Kit. Direction: audience, proof, trust, and real operator learning loops.</div></footer>
+  <footer><div class="wrap">FieldLayer — practical AI front-office workflows for home service businesses. Built in public by Rick Ships. Starter product: FieldLayer Starter Kit. Direction: audience, proof, trust, and real operator learning loops.</div></footer>
 </body>
 </html>
