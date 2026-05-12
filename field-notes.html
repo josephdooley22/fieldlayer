@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FieldLayer Field Notes — operator pain, proof, and learning loops</title>
+  <meta name="description" content="FieldLayer field notes: public operator pain signals, workflow stories, proof breakdowns, and learning loops for human-reviewed AI front-office workflows." />
+  <style>
+    :root { --ink:#10151f; --muted:#647084; --paper:#f4efe6; --card:#fffaf1; --line:#ded2bf; --accent:#315f4b; --accent2:#d87a32; --dark:#111827; --cream:#fff8ea; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--paper); line-height:1.58; }
+    a { color:inherit; }
+    .wrap { max-width:1080px; margin:0 auto; padding:0 22px; }
+    header { border-bottom:1px solid var(--line); background:rgba(244,239,230,.92); position:sticky; top:0; z-index:4; backdrop-filter:blur(10px); }
+    nav { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .brand { display:flex; align-items:center; gap:11px; font-weight:900; letter-spacing:-.04em; font-size:21px; text-decoration:none; }
+    .mark { width:38px; height:38px; border-radius:11px; background:linear-gradient(135deg,var(--accent),#18362a); display:grid; place-items:center; color:#fff; }
+    .mark:before { content:"F"; font-weight:950; }
+    .navlinks { display:flex; align-items:center; gap:18px; font-size:14px; color:var(--muted); }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:13px; background:var(--accent); color:white; border:1px solid #214433; font-weight:850; text-decoration:none; box-shadow:0 6px 0 #214433; }
+    .btn.secondary { background:transparent; color:var(--ink); box-shadow:none; border-color:var(--line); }
+    main { padding:70px 0; }
+    .eyebrow { display:inline-flex; padding:7px 11px; border-radius:999px; background:var(--cream); border:1px solid var(--line); color:var(--muted); font-size:13px; font-weight:850; }
+    h1 { margin:18px 0; font-size:clamp(42px,7vw,74px); line-height:.96; letter-spacing:-.07em; }
+    h2 { margin:0 0 14px; font-size:clamp(28px,4vw,44px); line-height:1; letter-spacing:-.055em; }
+    h3 { margin:0 0 8px; letter-spacing:-.035em; }
+    .lead { color:#354052; font-size:20px; max-width:800px; }
+    section { padding:42px 0; }
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:24px; }
+    .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:24px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:22px; box-shadow:0 18px 42px rgba(17,24,39,.07); }
+    .muted { color:var(--muted); }
+    .list { display:grid; gap:12px; padding:0; margin:16px 0 0; list-style:none; }
+    .list li { position:relative; padding-left:28px; }
+    .list li:before { content:"→"; position:absolute; left:0; color:var(--accent); font-weight:950; }
+    .note { border-left:5px solid var(--accent); }
+    .dark { background:var(--dark); color:white; margin-top:40px; padding:42px; border-radius:26px; }
+    .dark .muted { color:#cbd5e1; }
+    .mini { font-size:13px; color:var(--muted); margin-top:10px; }
+    footer { padding:30px 0; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    @media (max-width:860px){ .grid2,.grid3{grid-template-columns:1fr;} .navlinks a:not(.btn){display:none;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="/"><div class="mark"></div><span>FieldLayer</span></a>
+        <div class="navlinks"><a href="/scoreboard.html">Scoreboard</a><a href="/build-log.html">Build Log</a><a href="/home-service-crm-leak-map.html">Leak Map</a><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Get the kit — $29</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="wrap">
+      <span class="eyebrow">Field notes · public learning loop · 2026-05-12</span>
+      <h1>FieldLayer is built from operator pain, not AI novelty.</h1>
+      <p class="lead">These notes turn the daily build into public proof: what home-service operators struggle with, what workflow FieldLayer would install, what the human approves, and what the next product/content move should be.</p>
+
+      <section>
+        <h2>Today’s public operator signals</h2>
+        <div class="grid3">
+          <div class="card note"><h3>Software consolidation is not the real ask</h3><p class="muted">A roofing-company discussion centered on consolidating website, CRM/job management, estimates, phones, marketing, and lead nurture. FieldLayer read: the owner wants fewer loose handoffs, not just a new tool.</p></div>
+          <div class="card note"><h3>Estimates can become the bottleneck</h3><p class="muted">A landscaping-owner discussion described estimates that can take hours or days as work gets more complex. FieldLayer read: estimate drafting and assumption capture are a high-trust workflow target.</p></div>
+          <div class="card note"><h3>Qualification before appointments matters</h3><p class="muted">A free-estimate discussion emphasized qualifying jobs by asking for square footage or other pricing variables before a meeting. FieldLayer read: intake should collect the missing details that make estimates possible.</p></div>
+        </div>
+        <p class="mini">Sources: public web search snippets from Reddit/small-business and home-service CRM discussions. These are directional signals, not private customer research.</p>
+      </section>
+
+      <section>
+        <h2>Leak of the day: estimate drag</h2>
+        <div class="grid2">
+          <div class="card"><h3>The leak</h3><p class="muted">The owner gets a lead, but the estimate requires missing details, assumptions, measurements, or product choices. The lead waits while the owner is in the field.</p></div>
+          <div class="card"><h3>The FieldLayer workflow</h3><p class="muted">AI drafts an estimate-intake summary, flags missing fields, proposes a next customer question, and prepares an estimate draft from known assumptions. The human approves before anything is sent.</p></div>
+          <div class="card"><h3>Human approval point</h3><p class="muted">Owner/operator reviews pricing assumptions, labor/material notes, and the exact customer-facing message.</p></div>
+          <div class="card"><h3>Bad outcome prevented</h3><p class="muted">Warm leads going cold because estimate work lives in memory, texts, photos, notebooks, or disconnected CRM notes.</p></div>
+        </div>
+      </section>
+
+      <section class="dark">
+        <h2>What this changes next</h2>
+        <p class="lead muted">FieldLayer should keep leading with the estimate/intake/follow-up handoff because it is concrete, close to revenue, and easy for owners to recognize. The next proof asset should show a complete “lead → missing info → estimate draft → human approval” loop with sample data.</p>
+        <p><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Buy the Starter Kit</a> <a class="btn secondary" href="/scoreboard.html">View the scoreboard</a></p>
+      </section>
+    </div>
+  </main>
+  <footer><div class="wrap">FieldLayer field notes: public research, proof breakdowns, and learning loops for home-service AI workflows.</div></footer>
+</body>
+</html>
