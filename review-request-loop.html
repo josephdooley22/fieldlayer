@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FieldLayer Review Request Loop — human-reviewed AI workflow proof</title>
+  <meta name="description" content="A sample FieldLayer proof asset showing a human-reviewed review-request workflow for home service businesses." />
+  <style>
+    :root { --ink:#10151f; --muted:#647084; --paper:#f4efe6; --card:#fffaf1; --line:#ded2bf; --accent:#315f4b; --accent2:#d87a32; --dark:#111827; --cream:#fff8ea; --green:#dfeee5; --red:#f8dfd5; --blue:#dfe8f8; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--paper); line-height:1.58; }
+    a { color:inherit; }
+    .wrap { max-width:1120px; margin:0 auto; padding:0 22px; }
+    header { border-bottom:1px solid var(--line); background:rgba(244,239,230,.92); position:sticky; top:0; z-index:4; backdrop-filter:blur(10px); }
+    nav { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .brand { display:flex; align-items:center; gap:11px; font-weight:900; letter-spacing:-.04em; font-size:21px; text-decoration:none; }
+    .mark { width:38px; height:38px; border-radius:11px; background:linear-gradient(135deg,var(--accent),#18362a); display:grid; place-items:center; color:#fff; }
+    .mark:before { content:"F"; font-weight:950; }
+    .navlinks { display:flex; align-items:center; gap:18px; font-size:14px; color:var(--muted); }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:13px; background:var(--accent); color:white; border:1px solid #214433; font-weight:850; text-decoration:none; box-shadow:0 6px 0 #214433; }
+    .btn.secondary { background:transparent; color:var(--ink); box-shadow:none; border-color:var(--line); }
+    main { padding:70px 0; }
+    .eyebrow { display:inline-flex; padding:7px 11px; border-radius:999px; background:var(--cream); border:1px solid var(--line); color:var(--muted); font-size:13px; font-weight:850; }
+    h1 { margin:18px 0; font-size:clamp(42px,7vw,76px); line-height:.95; letter-spacing:-.075em; }
+    h2 { margin:0 0 14px; font-size:clamp(28px,4vw,46px); line-height:1; letter-spacing:-.055em; }
+    h3 { margin:0 0 8px; letter-spacing:-.035em; }
+    .lead { color:#354052; font-size:20px; max-width:860px; }
+    section { padding:42px 0; }
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:24px; }
+    .grid4 { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:24px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:22px; box-shadow:0 18px 42px rgba(17,24,39,.07); }
+    .muted { color:var(--muted); }
+    .pill { display:inline-flex; align-items:center; padding:4px 9px; border-radius:999px; background:var(--green); border:1px solid #bad6c4; color:#214433; font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.05em; }
+    .pill.red { background:var(--red); border-color:#e7b7a4; color:#7a341b; }
+    .pill.blue { background:var(--blue); border-color:#bac8df; color:#273d63; }
+    .flow { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin-top:24px; }
+    .step { background:#f1e6d5; border:1px solid var(--line); border-radius:18px; padding:16px; }
+    .step small { display:block; color:var(--muted); font-weight:850; text-transform:uppercase; letter-spacing:.05em; font-size:11px; margin-bottom:6px; }
+    .draft { background:#fff7de; border:1px dashed #d6aa50; border-radius:16px; padding:18px; }
+    .list { display:grid; gap:12px; padding:0; margin:16px 0 0; list-style:none; }
+    .list li { position:relative; padding-left:28px; }
+    .list li:before { content:"→"; position:absolute; left:0; color:var(--accent); font-weight:950; }
+    .dark { background:var(--dark); color:white; margin-top:40px; padding:42px; border-radius:26px; }
+    .dark .muted { color:#cbd5e1; }
+    footer { padding:30px 0; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    @media (max-width:900px){ .grid2,.grid4,.flow{grid-template-columns:1fr;} .navlinks a:not(.btn){display:none;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="/"><div class="mark"></div><span>FieldLayer</span></a>
+        <div class="navlinks"><a href="/scoreboard.html">Scoreboard</a><a href="/build-log.html">Build Log</a><a href="/field-notes.html">Field Notes</a><a href="/correction-loop.html">Correction Loop</a><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Get the kit — $29</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="wrap">
+      <span class="eyebrow">Public proof · sample data · review request workflow</span>
+      <h1>Review requests need an approval loop too.</h1>
+      <p class="lead">A review workflow should not blindly ask every customer at the wrong moment. This sample FieldLayer loop shows how AI can draft and track the request while a human confirms the job is complete and the customer is likely happy.</p>
+
+      <section>
+        <h2>The review-request flow</h2>
+        <div class="flow">
+          <div class="step"><small>Trigger</small><strong>Job marked complete</strong><p class="muted">Invoice done or crew notes say the work is finished.</p></div>
+          <div class="step"><small>Human check</small><strong>Customer sentiment</strong><p class="muted">Owner confirms no open complaint, callback, or unresolved punch-list item.</p></div>
+          <div class="step"><small>AI draft</small><strong>Review ask</strong><p class="muted">Message is drafted with job context and the right tone.</p></div>
+          <div class="step"><small>Approval</small><strong>Owner sends or edits</strong><p class="muted">Nothing customer-facing leaves without human approval.</p></div>
+          <div class="step"><small>Track</small><strong>Status visible</strong><p class="muted">Asked, waiting, reviewed, not a fit, or follow up later.</p></div>
+        </div>
+      </section>
+
+      <section class="grid2">
+        <div class="card">
+          <span class="pill blue">Owner view</span>
+          <h2 style="margin-top:14px">What the owner sees</h2>
+          <ul class="list">
+            <li>Completed jobs with no review request yet.</li>
+            <li>Jobs blocked because the customer may be unhappy.</li>
+            <li>Draft asks waiting for approval.</li>
+            <li>Review requests already sent and still pending.</li>
+          </ul>
+        </div>
+        <div class="draft">
+          <span class="pill">Sample AI draft</span>
+          <h3 style="margin-top:12px">Draft review ask</h3>
+          <p>“Thanks again for choosing us for the exterior repair. If everything looks good after the final walkthrough, would you be willing to leave a quick Google review? It helps other local homeowners know what to expect.”</p>
+          <p class="muted">The owner can approve, personalize, delay, or mark “do not ask yet.”</p>
+        </div>
+      </section>
+
+      <section class="grid4">
+        <div class="card"><span class="pill red">Do not ask</span><h3 style="margin-top:12px">Open issue</h3><p class="muted">Callback needed, billing concern, punch-list item, or unhappy reply.</p></div>
+        <div class="card"><span class="pill">Ready</span><h3 style="margin-top:12px">Happy signal</h3><p class="muted">Positive reply, clean completion note, paid invoice, or owner approval.</p></div>
+        <div class="card"><span class="pill blue">Draft</span><h3 style="margin-top:12px">Message waiting</h3><p class="muted">AI writes the ask; human chooses send/edit/wait.</p></div>
+        <div class="card"><span class="pill">Track</span><h3 style="margin-top:12px">Loop visible</h3><p class="muted">Review asked, completed, pending, or skipped for a reason.</p></div>
+      </section>
+
+      <section class="dark">
+        <h2>What this proves</h2>
+        <p class="lead muted">Even a simple review workflow needs the FieldLayer rule: AI drafts, summarizes, flags, and tracks. Humans approve, decide timing, and protect the customer relationship.</p>
+        <p><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Buy the Starter Kit</a> <a class="btn secondary" href="/build-log.html">Read the build log</a></p>
+      </section>
+    </div>
+  </main>
+  <footer><div class="wrap">FieldLayer proof assets use sample data and public workflow patterns. No private customer data is shown.</div></footer>
+</body>
+</html>

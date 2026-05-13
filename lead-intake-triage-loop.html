@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FieldLayer — Lead Intake Triage Loop</title>
+  <meta name="description" content="A sample-data proof page showing how FieldLayer turns messy lead intake into a structured job card, missing-info question, owner approval, and correction loop." />
+  <style>
+    :root { --ink:#10151f; --muted:#647084; --paper:#f4efe6; --card:#fffaf1; --line:#ded2bf; --accent:#315f4b; --accent2:#d87a32; --dark:#111827; --cream:#fff8ea; --green:#dfeee5; --red:#f8dfd5; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--paper); line-height:1.58; }
+    a { color:inherit; }
+    .wrap { max-width:1120px; margin:0 auto; padding:0 22px; }
+    header { border-bottom:1px solid var(--line); background:rgba(244,239,230,.92); position:sticky; top:0; z-index:4; backdrop-filter:blur(10px); }
+    nav { min-height:70px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .brand { display:flex; align-items:center; gap:11px; font-weight:900; letter-spacing:-.04em; font-size:21px; text-decoration:none; }
+    .mark { width:38px; height:38px; border-radius:11px; background:linear-gradient(135deg,var(--accent),#18362a); display:grid; place-items:center; color:#fff; }
+    .mark:before { content:"F"; font-weight:950; }
+    .navlinks { display:flex; align-items:center; gap:18px; font-size:14px; color:var(--muted); }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:13px; background:var(--accent); color:white; border:1px solid #214433; font-weight:850; text-decoration:none; box-shadow:0 6px 0 #214433; }
+    .btn.secondary { background:transparent; color:var(--ink); box-shadow:none; border-color:var(--line); }
+    main { padding:70px 0; }
+    .eyebrow { display:inline-flex; padding:7px 11px; border-radius:999px; background:var(--cream); border:1px solid var(--line); color:var(--muted); font-size:13px; font-weight:850; }
+    h1 { margin:18px 0; font-size:clamp(42px,7vw,76px); line-height:.95; letter-spacing:-.075em; }
+    h2 { margin:0 0 14px; font-size:clamp(28px,4vw,46px); line-height:1; letter-spacing:-.055em; }
+    h3 { margin:0 0 8px; letter-spacing:-.035em; }
+    .lead { color:#354052; font-size:20px; max-width:860px; }
+    section { padding:42px 0; }
+    .grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:24px; }
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:24px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:22px; box-shadow:0 18px 42px rgba(17,24,39,.07); }
+    .muted { color:var(--muted); }
+    .pill { display:inline-flex; align-items:center; padding:4px 9px; border-radius:999px; background:var(--green); border:1px solid #bad6c4; color:#214433; font-size:12px; font-weight:900; text-transform:uppercase; letter-spacing:.05em; }
+    .pill.red { background:var(--red); border-color:#e7b7a4; color:#7a341b; }
+    .timeline { display:grid; gap:14px; margin-top:24px; counter-reset:step; }
+    .step { display:grid; grid-template-columns:52px 1fr; gap:16px; align-items:start; background:var(--card); border:1px solid var(--line); border-radius:20px; padding:18px; }
+    .step:before { counter-increment:step; content:counter(step); width:38px; height:38px; border-radius:12px; display:grid; place-items:center; background:var(--accent); color:white; font-weight:950; }
+    .dark { background:var(--dark); color:white; margin-top:40px; padding:42px; border-radius:26px; }
+    .dark .muted { color:#cbd5e1; }
+    .sample { background:#f1e6d5; border:1px solid var(--line); border-radius:18px; padding:18px; white-space:pre-wrap; font-family:ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:14px; color:#223047; }
+    footer { padding:30px 0; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+    @media (max-width:900px){ .grid3,.grid2{grid-template-columns:1fr;} .navlinks a:not(.btn){display:none;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="brand" href="/"><div class="mark"></div><span>FieldLayer</span></a>
+        <div class="navlinks"><a href="/build-log.html">Build Log</a><a href="/scoreboard.html">Scoreboard</a><a href="https://x.com/rickships">X build</a><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Get the kit — $29</a></div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="wrap">
+      <span class="eyebrow">Sample-data proof · lead intake triage</span>
+      <h1>Turn a messy new lead into an owner-approved next step.</h1>
+      <p class="lead">FieldLayer does not need AI to answer every homeowner automatically. The safer first workflow is lead intake triage: capture the raw request, structure the job card, flag missing information, draft the next question, and wait for the owner before anything customer-facing goes out.</p>
+
+      <section class="grid3">
+        <div class="card"><span class="pill">Leak</span><h3 style="margin-top:12px">New leads arrive messy</h3><p class="muted">Calls, forms, texts, photos, and voice notes usually enter the business with missing details and inconsistent context.</p></div>
+        <div class="card"><span class="pill">AI job</span><h3 style="margin-top:12px">Structure and flag</h3><p class="muted">AI summarizes the request, extracts known facts, lists missing inputs, and drafts one clear customer question.</p></div>
+        <div class="card"><span class="pill red">Human rule</span><h3 style="margin-top:12px">Owner approves before send</h3><p class="muted">The owner edits, approves, or rejects the message. The correction becomes the rule for the next similar lead.</p></div>
+      </section>
+
+      <section>
+        <h2>The triage loop</h2>
+        <div class="timeline">
+          <div class="step"><div><h3>Raw lead captured</h3><p class="muted">Example: “Need a bathroom tile repair, maybe water behind it, can you come next week?”</p></div></div>
+          <div class="step"><div><h3>Job card drafted</h3><p class="muted">AI structures job type, location area, urgency, suspected issue, schedule request, and current unknowns.</p></div></div>
+          <div class="step"><div><h3>Missing-info question prepared</h3><p class="muted">The system drafts a short question asking for photos, affected area size, and whether active leaking is present.</p></div></div>
+          <div class="step"><div><h3>Owner reviews the draft</h3><p class="muted">The owner verifies tone, risk, pricing boundaries, and whether this job should be booked, declined, or clarified.</p></div></div>
+          <div class="step"><div><h3>Correction captured</h3><p class="muted">If the owner changes the question or adds a risk rule, that correction becomes the next training note.</p></div></div>
+        </div>
+      </section>
+
+      <section class="grid2">
+        <div class="card">
+          <h2>Sample owner card</h2>
+          <div class="sample">LEAD: Bathroom tile repair
+KNOWN: wants next week, possible water issue
+MISSING: photos, sqft/area, active leak?, access window
+AI DRAFT: “Could you send 2-3 photos of the tile area and let us know if there is active leaking right now?”
+RISK FLAG: possible water damage; do not quote until reviewed
+OWNER DECISION: approve / edit / reject / book inspection</div>
+        </div>
+        <div class="card">
+          <h2>Why this belongs first</h2>
+          <p class="muted">Lead intake is close to revenue, easy to inspect, and safe to keep behind human review. It creates a visible queue before FieldLayer asks the business to trust deeper automation.</p>
+          <p class="muted">The proof target stays narrow: one leak, one queue card, one missing-info draft, one owner decision, and one correction loop.</p>
+        </div>
+      </section>
+
+      <section class="dark">
+        <h2>The operating rule stays the same.</h2>
+        <p class="lead muted">AI structures, flags, and drafts. Humans approve, correct, send, schedule, and decide. That is the FieldLayer trust boundary.</p>
+        <p><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Buy the Starter Kit</a> <a class="btn secondary" href="/first-workflow-picker.html">Choose the first workflow</a></p>
+      </section>
+    </div>
+  </main>
+  <footer><div class="wrap">© FieldLayer. Sample data only. No private customer data in public proof assets.</div></footer>
+</body>
+</html>

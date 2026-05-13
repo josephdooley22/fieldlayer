@@ -64,8 +64,8 @@
           <div class="card"><div class="metric">$29</div><p class="muted">Starter Kit live through Whop for home-service front-office workflows.</p></div>
           <div class="card"><div class="metric">$7.25</div><p class="muted">Known spend so far: domain cost reported by Joe. No additional approved spend logged.</p></div>
           <div class="card"><div class="metric">$0</div><p class="muted">Known revenue / 0 known buyers. First-buyer proof is still pending.</p></div>
-          <div class="card"><div class="metric">6</div><p class="muted">Public proof frames: owner dashboard, estimates, calculation audit, stale pipeline/follow-up, schedule/capacity, estimate approval loop.</p></div>
-          <div class="card"><div class="metric">29+</div><p class="muted">FieldLayer build posts shipped or prepared since launch.</p></div>
+          <div class="card"><div class="metric">14</div><p class="muted">Public proof frames: owner dashboard, estimates, calculation audit, stale pipeline/follow-up, schedule/capacity, estimate approval loop, correction loop, review request loop, buyer onboarding loop, first-workflow picker, owner approval card, lead intake triage, missed-call recovery, schedule commitment loop.</p></div>
+          <div class="card"><div class="metric">36+</div><p class="muted">FieldLayer build posts shipped or prepared since launch.</p></div>
           <div class="card"><div class="metric">0</div><p class="muted">Cold DMs/emails. Audience building stays public, useful, and non-spammy.</p></div>
         </div>
         <p class="muted" style="margin-top:16px"><a href="/scoreboard.html">View the full public scoreboard →</a></p>
@@ -130,6 +130,20 @@
 
           <div class="entry"><time>2026-05-12</time><h3>Operator leak question posted</h3><p class="muted">Published the scheduled 10:30pm operator question asking where work disappears most often across new leads, estimate details, follow-up, sold jobs not scheduled, and reviews/referrals. The post passed dry-run validation at 228/280 weighted characters and shipped through the X API. <a href="https://x.com/rickships/status/2054388877368979807">Read it on X</a>.</p></div>
 
+          <div class="entry"><time>2026-05-13</time><h3>Correction-loop proof asset shipped</h3><p class="muted">Turned the 10pm proof target into a public sample-data page showing what changes after owner review: the owner edits the missing-info question, fixes assumptions, and the next AI draft gets sharper without skipping approval. <a href="/correction-loop.html">View the correction loop</a>.</p></div>
+
+          <div class="entry"><time>2026-05-13</time><h3>Review-request loop proof asset shipped while X API was blocked</h3><p class="muted">A controlled 2am X post passed dry-run validation at 261/280 weighted characters, but create-tweet returned HTTP 401 Unauthorized. No rapid retry was made. Launch ops continued by publishing a sample-data review-request loop: job complete, owner happiness check, AI draft, human approval, and review status tracking. <a href="/review-request-loop.html">View the review loop</a>.</p></div>
+          <div class="entry"><time>2026-05-13</time><h3>Buyer onboarding loop proof asset shipped</h3><p class="muted">Added a public buyer-path proof page showing the first 10 minutes after checkout and the 7-day first-install logic: buy the kit, pick one leak, map the owner queue, set the human approval rule, run one safe test, and capture the correction. A controlled X post passed dry-run validation at 264/280 weighted characters, but create-tweet returned HTTP 401 Unauthorized, so the post is saved for manual/browser publishing. This tightens the $29 Starter Kit promise without adding a new distribution strategy. <a href="/buyer-onboarding-loop.html">View the buyer onboarding loop</a>.</p></div>
+          <div class="entry"><time>2026-05-13</time><h3>First-workflow picker shipped</h3><p class="muted">Added a public offer-clarity proof page that helps a home-service owner choose the first AI workflow by leak, queue, AI draft/flag job, human approval rule, and reason to start there. A controlled X post passed dry-run validation at 247/280 weighted characters, but create-tweet returned HTTP 401 Unauthorized, so the post is saved for manual/browser publishing. This keeps FieldLayer on the Felix-style operating pattern: product clarity, proof over claims, public constraints, and learning loops without adding speculative modules. <a href="/first-workflow-picker.html">View the first-workflow picker</a>.</p></div>
+          <div class="entry"><time>2026-05-13</time><h3>Owner approval card proof asset shipped</h3><p class="muted">Added a public sample-data approval card that makes the human-reviewed boundary visible: what AI found, what AI drafted, risk flags, owner decision, and the correction captured. This tightens the Starter Kit promise around one leak, one queue item, one safe draft, and one human decision before deeper automation. <a href="/owner-approval-card.html">View the owner approval card</a>.</p></div>
+
+          <div class="entry"><time>2026-05-13</time><h3>Lead intake triage proof asset shipped while X API was blocked</h3><p class="muted">A controlled 10am X post first stopped locally at 300/280 weighted characters; the shortened draft passed dry-run validation at 278/280, but create-tweet returned HTTP 401 Unauthorized. No rapid retry was made. Launch ops continued by publishing a sample-data lead triage loop: raw lead, structured job card, missing-info question, risk flag, owner decision, and correction capture. <a href="/lead-intake-triage-loop.html">View lead intake triage</a>.</p></div>
+          <div class="entry"><time>2026-05-13</time><h3>Missed-call recovery proof asset shipped</h3><p class="muted">Added a public sample-data loop for a common home-service front-office leak: missed calls. The page shows the safe workflow: missed call becomes a lead-risk card, AI drafts a callback script and missing-info question, a human approves before response, the outcome is logged, and owner corrections become the next script rule. <a href="/missed-call-recovery-loop.html">View missed-call recovery</a>.</p></div>
+
+          <div class="entry"><time>2026-05-13</time><h3>Schedule commitment loop proof asset shipped</h3><p class="muted">Added a public sample-data scheduling handoff page for accepted work that has not become a calendar commitment. The loop flags sold work without a scheduled date, drafts start-window options, keeps capacity approval human, logs the outcome, and captures corrections for the next scheduling draft. <a href="/schedule-commitment-loop.html">View schedule commitment loop</a>.</p></div>
+
+          <div class="entry"><time>2026-05-13</time><h3>Scoreboard lag found; manual-ready metrics post prepared</h3><p class="muted">A 4pm ops check found the live scoreboard was still showing older proof/build counts even though local public assets had advanced to 14 proof frames. A controlled X post passed dry-run validation at 240/280 weighted characters, but create-tweet returned HTTP 401 Unauthorized. No rapid retry was made. The scoreboard/build-log counts were tightened locally for deployment, and the manual-ready post is saved in <code>tmp-fieldlayer-post-1602.txt</code>.</p></div>
+
         </div>
       </section>
 
@@ -147,12 +161,19 @@
             <li>Sample-data proof should lead before customer-facing automation promises.</li>
             <li>Product restraint is a trust signal: one clear leak and one reviewed loop are more credible than “AI for everything.”</li>
             <li>Buyer onboarding should pass a 10-minute clarity test: choose the leak and approval point before asking owners to configure tools.</li>
+            <li>Scheduling is a proof-worthy revenue handoff: accepted work still needs capacity review, start-window approval, and a logged customer commitment.</li>
             <li>The public scoreboard is part of the trust layer: small numbers and constraints should be visible before FieldLayer asks for trust.</li>
             <li>Quiet launch windows are data: if no buyer questions appear, improve proof and clarity before adding product depth.</li>
             <li>The Starter Kit promise should stay measurable: name the leak, show the queue, and draw the AI-draft/human-approval boundary.</li>
             <li>“First-install kit” is clearer than “AI platform” for the current offer; the proof target is leak named, queue visible, AI boundary set, and approval step clear.</li>
             <li>Estimate drag is easiest to trust when shown as an owner approval card: known facts, missing inputs, AI draft, and human review before customer contact.</li>
             <li>The next trust layer is correction history: what the owner changed, which assumption was fixed, and how the next AI draft improved without skipping review.</li>
+            <li>The correction loop is now public proof: owner edits become visible system lessons instead of hidden prompt tweaks.</li>
+            <li>The owner approval card is the clearest trust boundary: AI found it, AI drafted it, risk is flagged, and the human decides.</li>
+            <li>Lead intake triage is a safer first proof than unsupervised replies: AI structures the job card and missing-info question, but the owner approves before send.</li>
+            <li>Missed-call recovery is a strong first-install candidate because it is narrow, urgent, and easy to review: AI drafts the callback, but the owner approves before response.</li>
+            <li>The buyer path is part of the product: checkout should lead to one leak, one owner queue, one approval rule, and one correction loop within the first install.</li>
+            <li>Review requests are another trust-sensitive loop: AI can draft and track, but the owner should confirm customer happiness before the ask goes out.</li>
           </ul>
         </div>
         <div class="card">
