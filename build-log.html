@@ -64,8 +64,8 @@
           <div class="card"><div class="metric">$29</div><p class="muted">Starter Kit live through Whop for home-service front-office workflows.</p></div>
           <div class="card"><div class="metric">$7.25</div><p class="muted">Known spend so far: domain cost reported by Joe. No additional approved spend logged.</p></div>
           <div class="card"><div class="metric">$0</div><p class="muted">Known revenue / 0 known buyers. First-buyer proof is still pending.</p></div>
-          <div class="card"><div class="metric">14</div><p class="muted">Public proof frames: owner dashboard, estimates, calculation audit, stale pipeline/follow-up, schedule/capacity, estimate approval loop, correction loop, review request loop, buyer onboarding loop, first-workflow picker, owner approval card, lead intake triage, missed-call recovery, schedule commitment loop.</p></div>
-          <div class="card"><div class="metric">36+</div><p class="muted">FieldLayer build posts shipped or prepared since launch.</p></div>
+          <div class="card"><div class="metric">17</div><p class="muted">Public proof frames: owner dashboard, estimates, calculation audit, stale pipeline/follow-up, schedule/capacity, estimate approval loop, correction loop, review request loop, buyer onboarding loop, first-workflow picker, owner approval card, lead intake triage, missed-call recovery, schedule commitment loop, follow-up rescue loop, daily closeout loop, estimate handoff loop.</p></div>
+          <div class="card"><div class="metric">40+</div><p class="muted">FieldLayer build posts shipped or prepared since launch.</p></div>
           <div class="card"><div class="metric">0</div><p class="muted">Cold DMs/emails. Audience building stays public, useful, and non-spammy.</p></div>
         </div>
         <p class="muted" style="margin-top:16px"><a href="/scoreboard.html">View the full public scoreboard →</a></p>
@@ -142,7 +142,11 @@
 
           <div class="entry"><time>2026-05-13</time><h3>Schedule commitment loop proof asset shipped</h3><p class="muted">Added a public sample-data scheduling handoff page for accepted work that has not become a calendar commitment. The loop flags sold work without a scheduled date, drafts start-window options, keeps capacity approval human, logs the outcome, and captures corrections for the next scheduling draft. <a href="/schedule-commitment-loop.html">View schedule commitment loop</a>.</p></div>
 
+          <div class="entry"><time>2026-05-13</time><h3>Follow-up rescue loop proof asset shipped</h3><p class="muted">Added a public sample-data follow-up workflow for sent estimates that are going stale. The loop defines stale, builds an owner-visible rescue queue, drafts the next touch, keeps human approval before sending, and captures corrections for future drafts. <a href="/follow-up-rescue-loop.html">View follow-up rescue loop</a>.</p></div>
           <div class="entry"><time>2026-05-13</time><h3>Scoreboard lag found; manual-ready metrics post prepared</h3><p class="muted">A 4pm ops check found the live scoreboard was still showing older proof/build counts even though local public assets had advanced to 14 proof frames. A controlled X post passed dry-run validation at 240/280 weighted characters, but create-tweet returned HTTP 401 Unauthorized. No rapid retry was made. The scoreboard/build-log counts were tightened locally for deployment, and the manual-ready post is saved in <code>tmp-fieldlayer-post-1602.txt</code>.</p></div>
+
+          <div class="entry"><time>2026-05-13</time><h3>Daily closeout loop proof asset shipped</h3><p class="muted">Added a public sample-data closeout workflow for the final 15 minutes of a home-service day. The loop sweeps open leads, waiting estimates, stale follow-ups, unscheduled sold work, and review opportunities; AI drafts the closeout queue while the owner decides what gets sent, scheduled, delegated, or carried over. <a href="/daily-closeout-loop.html">View daily closeout loop</a>.</p></div>
+          <div class="entry"><time>2026-05-13</time><h3>Estimate handoff proof asset shipped</h3><p class="muted">Added a public sample-data estimate handoff workflow. The loop turns scattered lead details into a human-reviewed estimator packet: scope, site access, photos, timing, missing fields, risky assumptions, and the customer question or internal note to approve before quoting. <a href="/estimate-handoff-loop.html">View estimate handoff loop</a>.</p></div>
 
         </div>
       </section>
@@ -174,6 +178,7 @@
             <li>Missed-call recovery is a strong first-install candidate because it is narrow, urgent, and easy to review: AI drafts the callback, but the owner approves before response.</li>
             <li>The buyer path is part of the product: checkout should lead to one leak, one owner queue, one approval rule, and one correction loop within the first install.</li>
             <li>Review requests are another trust-sensitive loop: AI can draft and track, but the owner should confirm customer happiness before the ask goes out.</li>
+            <li>Daily closeout turns multiple small leaks into one visible owner queue before the business carries unfinished work overnight.</li>
           </ul>
         </div>
         <div class="card">
