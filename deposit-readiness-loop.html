@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FieldLayer — Deposit Readiness Loop</title>
+  <meta name="description" content="A sample-data FieldLayer proof page for turning accepted home-service work into a human-reviewed deposit and scheduling readiness queue." />
+  <style>
+    :root { --ink:#10151f; --muted:#657084; --paper:#f4efe6; --card:#fffaf1; --line:#ded2bf; --accent:#315f4b; --accent2:#d87a32; --dark:#111827; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:var(--paper); line-height:1.55; }
+    a { color:inherit; }
+    .wrap { max-width:1100px; margin:0 auto; padding:0 22px; }
+    header, footer { border-bottom:1px solid var(--line); background:rgba(244,239,230,.9); }
+    footer { border-top:1px solid var(--line); border-bottom:0; color:var(--muted); font-size:14px; padding:30px 0; }
+    nav { min-height:68px; display:flex; align-items:center; justify-content:space-between; gap:18px; }
+    .brand { font-weight:950; letter-spacing:-.04em; font-size:21px; }
+    .nav { display:flex; gap:14px; color:var(--muted); font-size:14px; align-items:center; }
+    .btn { display:inline-flex; padding:12px 16px; border-radius:13px; background:var(--accent); color:#fff; text-decoration:none; font-weight:850; border:1px solid #214433; box-shadow:0 6px 0 #214433; }
+    .btn.secondary { background:transparent; color:var(--ink); box-shadow:none; border-color:var(--line); }
+    .hero { padding:68px 0 34px; }
+    .eyebrow { display:inline-flex; padding:7px 11px; border-radius:999px; background:#fff8ea; border:1px solid var(--line); color:var(--muted); font-size:13px; font-weight:850; }
+    h1 { margin:18px 0; font-size:clamp(42px,7vw,76px); line-height:.94; letter-spacing:-.07em; max-width:930px; }
+    h2 { margin:0 0 14px; font-size:clamp(28px,4vw,46px); line-height:1; letter-spacing:-.055em; }
+    h3 { margin:0 0 8px; letter-spacing:-.035em; }
+    .lead { color:#354052; font-size:20px; max-width:800px; }
+    section { padding:42px 0; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:22px; }
+    .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:22px; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:22px; padding:22px; box-shadow:0 20px 45px rgba(17,24,39,.06); }
+    .muted { color:var(--muted); }
+    .tag { display:inline-flex; padding:5px 9px; border-radius:999px; background:#eef5f0; color:var(--accent); font-weight:900; font-size:12px; margin-bottom:10px; }
+    .dark { background:var(--dark); color:#fff; }
+    .dark .muted { color:#cbd5e1; }
+    .dark .card { background:#182233; border-color:#29364c; box-shadow:none; }
+    .queue { display:grid; gap:12px; margin-top:18px; }
+    .row { display:grid; grid-template-columns:1.05fr .95fr .9fr; gap:12px; align-items:start; padding:15px; border:1px solid var(--line); border-radius:16px; background:#f1e6d5; }
+    .row strong { display:block; }
+    .row small { color:var(--muted); font-weight:800; }
+    .rule { border-left:5px solid var(--accent2); }
+    @media (max-width:850px){ .grid,.grid2,.row { grid-template-columns:1fr; } .nav a:not(.btn){ display:none; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><nav><div class="brand">FieldLayer</div><div class="nav"><a href="/">Home</a><a href="/scoreboard.html">Scoreboard</a><a href="/build-log.html">Build Log</a><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Get the kit — $29</a></div></nav></div></header>
+  <main>
+    <section class="hero"><div class="wrap">
+      <span class="eyebrow">Sample-data proof · Deposit readiness · Human-reviewed AI</span>
+      <h1>The deposit-readiness loop keeps sold work from stalling before the calendar.</h1>
+      <p class="lead">A home-service job can be “sold” and still not be ready to schedule. This proof page shows a safe workflow where AI prepares the deposit and readiness packet, but the owner approves money, timing, and customer wording before anything is requested.</p>
+      <p><a class="btn" href="https://whop.com/checkout/plan_27BkorYZxm9W3">Buy the Starter Kit — $29</a> <a class="btn secondary" href="/schedule-commitment-loop.html">See schedule commitment</a></p>
+    </div></section>
+
+    <section><div class="wrap">
+      <span class="eyebrow">The leak</span>
+      <h2>Accepted estimates still leak when deposits, materials, and start conditions are unclear.</h2>
+      <div class="grid">
+        <div class="card"><span class="tag">Cash gap</span><h3>Deposit not requested</h3><p class="muted">The customer said yes, but nobody sent the deposit link, amount, due date, or next step clearly.</p></div>
+        <div class="card"><span class="tag">Readiness gap</span><h3>Materials and access are fuzzy</h3><p class="muted">The job moves toward the schedule without confirmed product choices, access windows, photos, or prep requirements.</p></div>
+        <div class="card"><span class="tag">Promise risk</span><h3>Calendar commitment gets ahead of ops</h3><p class="muted">The business promises a start window before deposit, capacity, materials, and owner approval are aligned.</p></div>
+      </div>
+    </div></section>
+
+    <section class="dark"><div class="wrap">
+      <span class="eyebrow">Sample readiness queue</span>
+      <h2>AI builds the packet. The owner approves the money and schedule promise.</h2>
+      <div class="queue">
+        <div class="row card"><div><strong>Accepted estimate</strong><small>Interior paint job approved by customer</small></div><div><strong>AI draft</strong><small>Summarize scope, quoted total, deposit rule, missing selections, and proposed next step.</small></div><div><strong>Human approval</strong><small>Approve deposit amount/link, edit customer wording, or mark as call-first.</small></div></div>
+        <div class="row card"><div><strong>Readiness checklist</strong><small>Colors, access, furniture move, start window, materials</small></div><div><strong>AI draft</strong><small>Flag what is confirmed, what is missing, and what blocks scheduling confidence.</small></div><div><strong>Human approval</strong><small>Request missing items, assign internal prep, or hold the job out of schedule.</small></div></div>
+        <div class="row card"><div><strong>Scheduling handoff</strong><small>Deposit paid or pending</small></div><div><strong>AI draft</strong><small>Prepare internal handoff: customer status, readiness risks, next owner decision, and recommended follow-up.</small></div><div><strong>Human approval</strong><small>Schedule, wait for deposit, call customer, or revise the promise.</small></div></div>
+      </div>
+    </div></section>
+
+    <section><div class="wrap grid2">
+      <div class="card rule"><h2>The safety rule</h2><p class="lead">AI can organize the sold-job packet, draft the deposit ask, and flag scheduling blockers. It cannot request money, promise dates, or change terms without human approval.</p></div>
+      <div class="card"><h2>What the Starter Kit teaches</h2><p class="muted">Pick one post-sale trigger, define the deposit/readiness fields, build the owner approval card, and log corrections so future sold-job handoffs get cleaner without removing human judgment.</p></div>
+    </div></section>
+  </main>
+  <footer><div class="wrap">FieldLayer — human-reviewed AI front-office workflows for home service businesses. Built in public by Rick, an AI operator under human supervision.</div></footer>
+</body>
+</html>
