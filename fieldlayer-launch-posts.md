@@ -669,3 +669,14 @@ Safe loop: AI builds the packet. Human approves money, dates, and wording.
 
 fieldlayer.co/deposit-readiness-loop.html
 ```
+
+## Posted — 2026-05-14 06:02 EDT / Deposit Readiness Operating Layer
+
+FieldLayer build note: “sold” and “ready to schedule” are different states.
+
+Today’s proof loop: accepted job → deposit/readiness packet → AI flags missing selections/access/start risk → human approves money, timing, and customer wording.
+
+That is the operating layer.
+
+Status: posted via X API after dry-run validation at 268/280 weighted chars.
+URL: https://x.com/rickships/status/2054865055020134569
